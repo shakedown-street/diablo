@@ -60,23 +60,23 @@ write_to.close()
 black_knight = {
     "idle": {
         "duration": 125,
-        "frames": generate_frame_list(3846, 9, 160, 128, 80, 64, 8, 8)
+        "frames": generate_frame_list(3846, 9, 160, 128, 80, 128, 8, 8)
     },
     "walk": {
         "duration": 125,
-        "frames": generate_frame_list(2563, 9, 160, 128, 80, 64, 8, 8)
+        "frames": generate_frame_list(2563, 9, 160, 128, 80, 128, 8, 8)
     },
     "hit": {
         "duration": 62.5,
-        "frames": generate_frame_list(3846, 1051, 160, 128, 80, 64, 8, 4)
+        "frames": generate_frame_list(3846, 1051, 160, 128, 80, 128, 8, 4)
     },
     "attack": {
         "duration": 62.5,
-        "frames": generate_frame_list(0, 9, 160, 128, 80, 64, 8, 16)
+        "frames": generate_frame_list(0, 9, 160, 128, 80, 128, 8, 16)
     },
     "die": {
         "duration": 83,
-        "frames": generate_frame_list(0, 1051, 160, 160, 80, 80, 8, 24)
+        "frames": generate_frame_list(0, 1051, 160, 160, 80, 160, 8, 24)
     }
 }
 

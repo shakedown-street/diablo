@@ -13,13 +13,16 @@ import {
 import {
   Entity,
   Player,
-  CoinsAnim,
   CoinsGroundItem,
   HeavyArmorGroundItem,
   GroundItem,
   BlackKnightEntity,
   HeavyArmorSwordShieldEntity,
 } from './';
+
+import {
+  CoinsAnim,
+} from './anims';
 
 
 export class AttackKeyEvent extends Event {

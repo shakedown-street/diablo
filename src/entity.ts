@@ -1,5 +1,5 @@
 import { AnimationDef, Point2d, Renderer, Random } from './squire';
-import { HeavyArmorSwordShield, BlackKnight } from './';
+import { HeavyArmorSwordShieldAnim, BlackKnightAnim } from './anims';
 
 export abstract class Entity {
 
@@ -233,7 +233,7 @@ export abstract class Entity {
 // public walkSpeed = 75;
 
 export class BlackKnightEntity extends Entity {
-  public animation = new BlackKnight();
+  public animation = new BlackKnightAnim();
   public maxHitpoints = 2000;
   public hitpoints = 2000;
   public attackRange = 128;
@@ -246,7 +246,7 @@ export class BlackKnightEntity extends Entity {
 }
 
 export class HeavyArmorSwordShieldEntity extends Entity {
-  public animation = new HeavyArmorSwordShield();
+  public animation = new HeavyArmorSwordShieldAnim();
   public maxHitpoints = 2000;
   public hitpoints = 2000;
   public attackRange = 96;

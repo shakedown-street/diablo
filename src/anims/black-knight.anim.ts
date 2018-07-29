@@ -1,6 +1,6 @@
-import { AnimationDef } from './squire';
+import { AnimationDef } from '../squire';
 
-export class BlackKnight extends AnimationDef {
+export class BlackKnightAnim extends AnimationDef {
   public getImageUrl(): any {
     return "assets/black_knight.png";
   }

@@ -1,6 +1,6 @@
 import { AnimationDef, Point2d, Renderer } from './squire';
-import { CoinsAnim } from './coins.anim';
-import { HeavyArmorItemAnim } from './heavy-armor-item.anim';
+import { CoinsAnim } from './anims';
+import { HeavyArmorItemAnim } from './anims';
 
 export abstract class GroundItem {
 

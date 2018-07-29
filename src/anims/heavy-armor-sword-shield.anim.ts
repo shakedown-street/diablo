@@ -1,6 +1,6 @@
-import { AnimationDef } from './squire';
+import { AnimationDef } from '../squire';
 
-export class HeavyArmorSwordShield extends AnimationDef {
+export class HeavyArmorSwordShieldAnim extends AnimationDef {
 
   public getImageUrl(): any {
     return "assets/heavy_armor_sword_shield.png";

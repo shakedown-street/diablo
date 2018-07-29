@@ -6,15 +6,18 @@ import {
 
 import {
   Entity,
-  BlackKnight,
-  HeavyArmorSwordShield,
 } from './';
+
+import {
+  BlackKnightAnim,
+  HeavyArmorSwordShieldAnim,
+} from './anims';
 
 export class Player extends Entity {
 
   public connection: Connection;
 
-  public animation = new HeavyArmorSwordShield();
+  public animation = new HeavyArmorSwordShieldAnim();
   public name: string = '';
   public maxHitpoints = 5000;
   public hitpoints = 5000;

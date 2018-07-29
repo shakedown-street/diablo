@@ -1,4 +1,4 @@
-import { AnimationDef } from './squire';
+import { AnimationDef } from '../squire';
 
 export class CoinsAnim extends AnimationDef {
 

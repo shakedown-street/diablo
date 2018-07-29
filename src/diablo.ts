@@ -1,4 +1,4 @@
-import { sortBy as _sortBy } from 'lodash';
+import { orderBy as _orderBy } from 'lodash';
 
 import {
   Connection,
@@ -154,14 +154,14 @@ class GameState extends State {
   }
 
   public render(r: Renderer) {
+    console.log('a');
     r.image(this.terrainSprite, 0, 0, 910, 610, 0, 0, 910, 610);
     let toSort = this.entities.concat(this.player);
-    let sortedEntites = _sortBy(toSort, (obj) => {
-      if (obj.isDead()) {
-        return 0;
-      }
-      return -obj.pos.x;
-    });
+    let sortedEntites = _orderBy(toSort, [
+      (obj) => obj.isDead(),
+      (obj) => -obj.pos.y,
+      (obj) => -obj.pos.x,
+    ]);
     this.groundItems.forEach((item) => {
       item.renderAnim(r);
     });

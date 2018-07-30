@@ -12,12 +12,13 @@ import {
 
 import {
   Entity,
-  Player,
   CoinsGroundItem,
   HeavyArmorGroundItem,
   GroundItem,
   BlackKnightEntity,
   HeavyArmorSwordShieldEntity,
+  Map,
+  Player,
 } from './';
 
 import {
@@ -58,6 +59,7 @@ class GameState extends State {
   private cursors: any;
   private entities: Entity[] = [];
   private groundItems: GroundItem[] = [];
+  private map: Map;
 
   private mouseDownEvent: any;
   private mouseUpEvent: any;
@@ -71,6 +73,7 @@ class GameState extends State {
     this.connection = new Connection('ws://localhost:443');
     this.player = new Player(this.connection, new Point2d(400, 300));
     this.entities.push(new BlackKnightEntity(new Point2d(200, 150)));
+    this.map = new Map();
     this.gameCtx.canvas.addEventListener('mousemove', (canvasEvent: any) => {
       let offsetX, offsetY = 0;
       let element = this.gameCtx.canvas;
@@ -154,7 +157,7 @@ class GameState extends State {
   }
 
   public render(r: Renderer) {
-    r.image(this.terrainSprite, 0, 0, 910, 610, 0, 0, 910, 610);
+    this.map.render(r);
     let toSort = this.entities.concat(this.player);
     let sortedEntites = _orderBy(toSort, [
       (obj) => obj.isDead(),

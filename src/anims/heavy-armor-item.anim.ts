@@ -3,7 +3,7 @@ import { AnimationDef } from '../squire';
 export class HeavyArmorItemAnim extends AnimationDef {
 
   public getImageUrl(): any {
-    return "assets/items.png";
+    return "https://punkweb.net/static/punkweb/js/assets/diablo/items.png";
   }
 
   public animations = {

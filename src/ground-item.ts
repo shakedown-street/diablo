@@ -12,14 +12,14 @@ export abstract class GroundItem {
 
   public renderAnim(r: Renderer) {
     let now = Date.now();
-    let frameCount = this.animation.animations["drop"].frames.length;
-    let frameDuration = this.animation.animations["drop"].duration;
+    let frameCount = this.animation.animations['drop'].frames.length;
+    let frameDuration = this.animation.animations['drop'].duration;
     let needsNewFrame = now - this.lastFrameTime > frameDuration;
     if (needsNewFrame && this.frame != frameCount - 1) {
       this.frame = (this.frame + 1) % frameCount;
       this.lastFrameTime = now;
     }
-    this.animation.render(r, "drop", this.frame, 0, this.pos.x, this.pos.y);
+    this.animation.render(r, 'drop', this.frame, 0, this.pos.x, this.pos.y);
   }
 }
 

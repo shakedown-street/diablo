@@ -1,4 +1,4 @@
-import { Event, Renderer, SquireGame } from './';
+import { Renderer } from './';
 
 export abstract class State {
 

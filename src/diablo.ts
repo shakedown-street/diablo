@@ -110,12 +110,12 @@ class GameState extends State {
     this.terrainSprite.onload = () => {
       console.log('Image loaded: ' + 'assets/terrain.png')
     };
-    this.terrainSprite.src = 'assets/terrain.png';
+    this.terrainSprite.src = 'https://punkweb.net/static/punkweb/js/assets/diablo/terrain.png';
     // this.cursors = new Image();
     // this.cursors.onload = () => {
     //   console.log('Image loaded: ' + 'assets/cursors.png')
     // };
-    // this.cursors.src = 'assets/cursors.png';
+    // this.cursors.src = 'https://punkweb.net/static/punkweb/js/assets/diablo/cursors.png';
   }
 
   public init() { }
@@ -154,7 +154,6 @@ class GameState extends State {
   }
 
   public render(r: Renderer) {
-    console.log('a');
     r.image(this.terrainSprite, 0, 0, 910, 610, 0, 0, 910, 610);
     let toSort = this.entities.concat(this.player);
     let sortedEntites = _orderBy(toSort, [

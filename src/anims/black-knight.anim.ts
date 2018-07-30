@@ -2,7 +2,7 @@ import { AnimationDef } from '../squire';
 
 export class BlackKnightAnim extends AnimationDef {
   public getImageUrl(): any {
-    return "assets/black_knight.png";
+    return "https://punkweb.net/static/punkweb/js/assets/diablo/black_knight.png";
   }
 
   public animations = {

@@ -1,5 +1,4 @@
 import { Renderer, State } from './';
-import { sortBy as _sortBy, reverse as _reverse } from 'lodash';
 
 export class StateManager {
 

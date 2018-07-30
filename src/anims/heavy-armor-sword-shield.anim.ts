@@ -3,7 +3,7 @@ import { AnimationDef } from '../squire';
 export class HeavyArmorSwordShieldAnim extends AnimationDef {
 
   public getImageUrl(): any {
-    return "assets/heavy_armor_sword_shield.png";
+    return "https://punkweb.net/static/punkweb/js/assets/diablo/heavy_armor_sword_shield.png";
   }
 
   public animations = {

@@ -43,6 +43,7 @@ export class Renderer {
     this.ctx.lineWidth = lineWidth;
     this.ctx.moveTo(x1, y1);
     this.ctx.lineTo(x2, y2);
+    this.ctx.strokeStyle = color;
     this.ctx.stroke();
   }
 

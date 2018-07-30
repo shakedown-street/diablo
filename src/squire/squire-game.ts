@@ -1,5 +1,4 @@
 import {
-  Event,
   Dimension2d,
   Point2d,
   Renderer,
